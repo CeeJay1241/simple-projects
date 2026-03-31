@@ -11,12 +11,13 @@ class Paddle(Turtle):
         self.shapesize(stretch_wid=5, stretch_len=1)
         self.color("white")
         self.goto(cord)
+        self.move_distance = 25
 
     def go_up(self):
-        self.goto(self.xcor(), self.ycor() + 20)
+        self.goto(self.xcor(), self.ycor() + self.move_distance)
         
     def go_down(self):
-        self.goto(x=self.xcor(), y=self.ycor() - 20)
+        self.goto(x=self.xcor(), y=self.ycor() - self.move_distance)
 
     
 
