@@ -1,12 +1,12 @@
-question_data =[
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "RAM stands for Random Access Memory.", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "Ada Lovelace is often considered the first computer programmer.", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "The Windows 7 operating system has six main editions.", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "The Python programming language gets its name from the British comedy group \"Monty Python.\"", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "Time on computers is measured via the Epoch system.", "correct_answer": "False", "incorrect_answers": ["True"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "\"HTML\" stands for Hypertext Markup Language.", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "Pointers were not used in the original C programming language; they were added later on in C++.", "correct_answer": "False", "incorrect_answers": ["True"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "In most programming languages, the operator ++ is equivalent to the statement \"+= 1\".", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "The first IBM PC was released in 1981.", "correct_answer": "True", "incorrect_answers": ["False"]},
-    {"type": "boolean", "difficulty": "easy", "category": "Science: Computers", "question": "Linus Torvalds created Linux and Git.", "correct_answer": "True", "incorrect_answers": ["False"]}
+question_data = [
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "Zebras are white with black stripes.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "Kangaroos keep food in their pouches next to their children.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "Elephants are physically unable to jump.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "In 2016, the IUCN reclassified the status of Giant Pandas from endangered to vulnerable.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "A caterpillar has more muscles than humans do.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "The freshwater amphibian, the Axolotl, can regrow it's limbs.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "A flock of crows is known as a homicide.", "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "Rabbits can't vomit.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "A bear does NOT defecate during hibernation.", "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"type": "boolean", "difficulty": "easy", "category": "Animals", "question": "Cats have whiskers under their legs.", "correct_answer": "True", "incorrect_answers": ["False"]}
 ]
