@@ -2,7 +2,7 @@ from turtle import Screen, Turtle
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
-import time 
+import time
 
 screen = Screen()
 screen.setup(width=600, height= 600)
@@ -11,8 +11,13 @@ screen.title("My Snake Game")
 screen.tracer(0)
 
 
+def save_and_exit():
+    if scoreboard.score > scoreboard.high_score:
+        scoreboard.high_score = scoreboard.score
+        scoreboard.data_file.write_text(f"{scoreboard.high_score}")
+    screen.bye()
 
-screen.onclick(lambda x, y: screen.bye())
+screen.onclick(lambda x, y: save_and_exit())
 scoreboard = Scoreboard()
 snake = Snake()
 food = Food()
@@ -34,13 +39,12 @@ while game_on:
         food.move()
         snake.grow()
         scoreboard.level_up()
-    
-    
-    #Detect collision with walls or tail
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 285 or snake.head.ycor() < -280 or snake.head.distance(snake.new_seg) < 5:
-        scoreboard.reset()
-        snake.reset()
-    
+
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment) < 5:
+            scoreboard.reset()
+            snake.reset()
+            break
 
 
 screen.exitonclick()

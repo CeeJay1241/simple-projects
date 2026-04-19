@@ -33,6 +33,19 @@ class Snake(Turtle):
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
 
+        # Handle wraparound for head position
+        x = self.head.xcor()
+        y = self.head.ycor()
+        if x > 280:
+            x = -300
+        elif x < -280:
+            x = 300
+        if y > 285:
+            y = -300
+        elif y < -285:
+            y = 300
+        self.head.goto(x, y)
+
     def grow(self):
         self.add_segment(self.segments[-1].position())
 
